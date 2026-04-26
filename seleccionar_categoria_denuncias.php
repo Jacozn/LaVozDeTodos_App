@@ -9,10 +9,10 @@
         $cnx = new Conexion();
         $conexion = $cnx->AbrirConexion(); 
 
-        if ($conexion === false || !($conexion instanceof PDO)) {
+        if (!($conexion instanceof PDO)) {
              echo json_encode([
                 "status" => "error",
-                "message" => "Error de conexión: El objeto de conexión no es válido o falló al inicializar."
+                "message" => "Detalle real: " . $conexion
             ]);
             exit;
         }
