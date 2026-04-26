@@ -26,8 +26,8 @@
 					$this->clave,
 					[
 						PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-						PDO::SQLSRV_ATTR_DIRECT_QUERY => true,
-						PDO::SQLSRV_ATTR_ENCODING => PDO::SQLSRV_ENCODING_UTF8
+						1005 => true,
+						1002 => 3
 					]
 				);
 
