@@ -9,7 +9,7 @@
 		
 		function __construct()
 		{
-			$this->servidor = "lavozdetodos-app.database.windows.net";
+			$this->servidor = "applavozdetodos.database.windows.net";
 			$this->usuario = "LavozdetodosAdmin";
 			$this->clave = "abc123$.";
 			$this->basedatos = "db_LaVozDeTodos";
